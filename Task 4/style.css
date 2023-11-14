@@ -44,6 +44,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #aeaeae;
+    padding-top: 80px;
+}
+
+.wrapper{
+    border: 5px solid black;
+    background: #fff;
 }
 
 .slider-container,
@@ -56,11 +63,12 @@ body{
 
 h1{
     padding: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
+    font-size: 40px;
 }
 
 .slider-container{
-    margin: 25px;
+    margin: 15px;
 }
 
 .slider-container p{
@@ -104,38 +112,22 @@ h1{
     flex-direction: column;
 }
 
-#login-email{
-    padding: 5px;
-    margin: 10px;
-    width: 250px;
-    height: 30px;
-}
-
-#signup-email{
-    padding: 5px;
-    margin: 10px;
-    width: 250px;
-    height: 30px;
-}
-
-#login-password{
-    padding: 5px;
-    margin: 10px;
-    width: 250px;
-    height: 30px;
-}
-
+#login-email,
+#signup-email,
+#login-password,
 #signup-password{
     padding: 5px;
     margin: 10px;
     width: 250px;
     height: 30px;
+    border-radius: 5px;
 }
 
 button{
     margin: 20px;
     height: 35px;
     width: 80px;
+    border-radius: 5px;
 }
 
 #message{
@@ -146,4 +138,5 @@ button{
     font-style: bold;
     padding: 30px;
     transition: ease-in 0.3s;
+    color: black;
 }
