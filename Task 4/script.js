@@ -15,13 +15,13 @@ document.getElementById("signup-form").addEventListener("submit", (e) => {
   // Store the user in memory
   users[email] = hashedPassword;
 
-  // Clear the input fields
   document.getElementById("signup-email").value = "";
   document.getElementById("signup-password").value = "";
 
   showMessage("User signed up successfully.");
   }
 });
+
 
 // Login function
 document.getElementById("login-form").addEventListener("submit", (e) => {
@@ -72,7 +72,6 @@ function showMessage(message) {
     const messageElement = document.getElementById("message");
     messageElement.textContent = message;
   
-    // Clear the message after 2 seconds (2000 milliseconds)
     setTimeout(() => {
       messageElement.textContent = "";
     }, 2000);
